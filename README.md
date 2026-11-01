@@ -2,7 +2,15 @@
 
 Una ruleta para ponerse a escribir, a la manera de The Brainstormer (Andrew Bosley / Tapnik): tres ruedas
 (**conflicto** / **estilo o ambiente** / **sujeto o lugar**), una tirada, candados para fijar lo que te gusta,
-y debajo una caja para escribir lo que salga. Lo escrito se guarda en el navegador con su terna y su fecha.
+y debajo una caja para escribir lo que salga.
+
+## Cómo se guarda
+
+- La terna se **fija al empezar a escribir**: girar las ruedas después no la cambia.
+- Lo que escribes se guarda solo como borrador (`localStorage`); recargar no lo pierde.
+- **guardar** (o ⌘/ctrl + enter) lo pasa al archivo con su terna y su fecha, y vacía la caja.
+- Cada texto del archivo se puede **borrar**; **descargar todo (.md)** baja el archivo entero en Markdown.
+- Todo vive en el navegador: otro navegador u otro aparato no lo ve, y borrar los datos del sitio lo borra.
 
 Web estática, sin build ni dependencias. Abrir `index.html` con cualquier servidor local
 (`python3 -m http.server`) o publicar la rama `main` en GitHub Pages.

@@ -10,14 +10,17 @@
 <body>
 <header>
   <h1>ruleta</h1>
-  <button id="tirar" type="button">⚄ tirar</button>
+  <button id="tirar" type="button">tirar</button>
 </header>
 <main>
   <section class="ruedas" id="ruedas" aria-label="ruedas"></section>
-  <section class="escribir">
+  <section class="escribir boleto">
     <p class="terna" id="terna"></p>
     <textarea id="texto" rows="8" placeholder="escribe aquí lo que te salga de la terna"></textarea>
-    <button id="guardar" type="button">guardar</button>
+    <div class="acciones">
+      <button id="descargar" type="button" hidden>descargar todo (.md)</button>
+      <button id="guardar" type="button">guardar</button>
+    </div>
   </section>
   <section class="archivo" id="archivo" aria-label="archivo"></section>
 </main>
